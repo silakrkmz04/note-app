@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToDoListActivity"
+    android:background="@drawable/bg_main_gradient"
+    >
+
+    <ImageView
+        android:id="@+id/img_cloud"
+        android:layout_width="109dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/cloud_svgrepo_com"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"/>
+    
+    <ImageView
+        android:id="@+id/img_smiling_face"
+        android:layout_width="28.13dp"
+        android:layout_height="27.98dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/img_cloud"
+        app:layout_constraintEnd_toEndOf="@+id/img_cloud"
+        app:layout_constraintTop_toTopOf="@id/img_cloud"
+        app:layout_constraintBottom_toBottomOf="@id/img_cloud"
+        android:src="@drawable/emoticon_square_smiling_face_with_closed_eyes_svgrepo_com"
+        tools:ignore="ContentDescription"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="231dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="32dp"
+        android:text="Tuesday, Oct 26"
+        android:textColor="@color/text_light"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_cloud"
+        app:layout_constraintStart_toEndOf="@+id/img_cloud"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_main_title"
+        android:layout_width="310dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="195dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Your To-Do’s!"
+        android:textColor="@color/text_light"
+        android:textSize="48sp"
+        android:textStyle="bold"
+
+        tools:ignore="HardcodedText" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_tasks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_main_title"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/layout_task_card" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:src="@drawable/plus_large_svgrepo_com"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.942"
+        app:tint="@android:color/white"
+        tools:ignore="ContentDescription" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

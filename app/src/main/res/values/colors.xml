@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg_gradient_start">#1C1C1E</color>
+    <color name="bg_gradient_stop1">#A19C82</color>
+    <color name="bg_gradient_end">#C3A5E6</color>
+    <color name="personal_card_bg_start">#FDF5DA</color>
+    <color name="personal_card_bg_end">#F7BCC0</color>
+    <color name="work_card_bg_start">#CCE6F1</color>
+    <color name="work_card_bg_end">#BAB5F7</color>
+    <color name="health_card_bg_start">#FBF6DB</color>
+    <color name="health_card_bg_end">#ADF2E9</color>
+    <color name="school_card_bg_start">#9BACEF</color>
+    <color name="school_card_bg_end">#A0DBBBE3</color>
+    <color name="text_dark">#000000</color>
+    <color name="text_light">#FFFFFF</color>
+    <color name="category_bg">#FBC4C4</color>
+    <color name="completed_check_bg">#47DD42</color>
+    <color name="color_check_default">#BDBABA</color>
+    <color name="dark_surface">#363636</color>
+</resources>

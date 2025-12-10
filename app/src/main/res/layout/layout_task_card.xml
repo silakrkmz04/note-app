@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_task_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="16dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="20dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card_background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card_personal"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_task_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:text="Personal "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_task_title"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/check_circle"
+            app:layout_constraintTop_toBottomOf="@id/tv_task_category"
+            tools:text="Lorem ipsum dolor sit amet consectetur adipiscing elit" />
+
+        <ImageView
+            android:id="@+id/check_circle"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/bg_check_circle"
+            android:backgroundTint="#171717"
+            android:src="@drawable/check_mark_correct_svgrepo_com"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
