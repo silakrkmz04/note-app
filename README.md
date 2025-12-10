@@ -26,8 +26,16 @@ Developed using **Android Studio** and **Java**.
 
 ---
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
 1. Clone this repository:
    ```bash
    git clone https://github.com/silakrkmz04/note-app.git
+2. Open the project in Android Studio
+
+3. Allow the project to sync and build automatically
+
+4. Run the app using:
+
+5. A physical Android device
+or Android Emulator
